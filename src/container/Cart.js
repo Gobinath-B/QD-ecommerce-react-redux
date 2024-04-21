@@ -18,7 +18,7 @@ export default function Cart() {
     if (item.count === 1) {
       dispatch(removeItem(item));
     } else {
-      dispatch(modifyItem({ ...item, count: item.count + 1 }));
+      dispatch(modifyItem({ ...item, count: item.count - 1 }));
     }
   };
 
