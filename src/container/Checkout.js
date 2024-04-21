@@ -2,12 +2,12 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import ProductListItem from "../components/ProductListItem";
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { ProductList } from "../data/ProductList";
 
 export default function Checkout() {
   const list = useSelector((state) => state.cart.list);
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const params = useParams();
   const [state, setState] = useState(
     params.id
