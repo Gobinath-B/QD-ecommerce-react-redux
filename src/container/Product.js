@@ -7,7 +7,7 @@ import { addItem } from "../redux/reducer/cart";
 import firebase from '../config/firebase'
 import toast from "react-hot-toast";
 import { setProducts } from "../redux/reducer/products";
-
+import ImageSider from "../components/ImageSlider";
 
 
 export default function Product() {
@@ -89,6 +89,7 @@ export default function Product() {
             alt={props?.title}
             className="border-radius-9"
           />
+          {/* <ImageSider images={images}/> Pass the image array here */} 
         </div>
         <div className="card-body mt-3">
           <div className="card-title">{props?.title}</div>
