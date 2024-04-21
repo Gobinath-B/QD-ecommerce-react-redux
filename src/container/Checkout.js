@@ -53,6 +53,10 @@ export default function Checkout() {
     ])
   };
 
+  const success = ()=>{
+    return <span className="alert alert-success">Hurray, Order Placed</span>;
+  };
+
   return (
     <>
       {state.length > 0 ? (
@@ -68,7 +72,8 @@ export default function Checkout() {
           ))}
           <button
             className="btn btn-success"
-            onClick={() => navigate("/success")}
+            // onClick={() => navigate("/success")}
+            onClick={success}
           >
             Place Order
           </button>
