@@ -23,7 +23,7 @@ const BannerSlider = ({ images }) => {
                 src={images[currentIndex].imgPath}
                 alt={images[currentIndex].label}
                 style={{ width: '100%', 
-                height: '50vh', 
+                height: '85vh', 
                 objectFit: 'cover' // Optional: maintain the aspect ratio
                 }}
             />
